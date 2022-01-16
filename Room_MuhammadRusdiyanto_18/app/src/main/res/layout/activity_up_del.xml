@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".UpDelActivity">
+
+    <ImageView
+        android:id="@+id/nav_back3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDIT A SUBJECT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.186">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ed_title"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_marginBottom="25dp"
+                android:ems="10"
+                android:hint="Subject title (eg. math, english, etc.)"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/ed_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:ems="10"
+                android:hint="Subject Teacher (Mr. / Mrs.)"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/do_del"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
+        android:text="Delete"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="#3F51B5"
+        app:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
+        android:id="@+id/do_up"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
+        android:text="Update"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:backgroundTint="#03A9F4"
+        app:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.333" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
